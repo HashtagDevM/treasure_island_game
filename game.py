@@ -22,16 +22,16 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 ''')
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
-choice1 = input("You\'re at a crossroad, do you go left or right? ").lower()
+choice1 = input("You\'re at a crossroad, do you go left or right?\n").lower()
 
 if choice1 == "left":
-    choice2 = input('You reach a lake. There is an island in the middle. You see a sign indicating that a boat will come later. Do you go "swim" across or do you "wait" for the boat? ').lower()
+    choice2 = input('You reach a lake. There is an island in the middle. You see a sign indicating that a boat will come later. Do you go "swim" across or do you "wait" for the boat?\n').lower()
     if choice2 == "wait":
-        choice3 = (input('On the island is a house. You go inside and find a room with 3 doors. Which door do you choose? The "red", "yellow" or the "blue" door? ')).lower()
+        choice3 = (input('On the island is a house. You go inside and find a room with 3 doors. Which door do you choose? The "red", "yellow" or the "blue" door?\n')).lower()
         if choice3 == "red":
             print("You open the door and trigger a trap. The room is engulfed in flames and you die.\nGame Over.")
         elif choice3 == "yellow":
-            print("You enter the room and find a hidden stairway behind a bookcase. The stairway leads you through a dark passage into a cave. The cave is filled with treasure. You Win! ")
+            print("You enter the room and find a hidden stairway behind a bookcase. The stairway leads you through a dark passage into a cave. The cave is filled with treasure.\nYou Win! ")
         else:
             print("You enter through the door and go inside. The creaking sound of the old door wakes the sleeping Vampire and he drains all your blood.\nGame Over. ")
     else:
